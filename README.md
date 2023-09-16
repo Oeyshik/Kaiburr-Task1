@@ -50,6 +50,41 @@ In the 'application.properties' file, configure your MongoDB database settings:
         spring.data.mongodb.database=task1
 
 ## Project Structure
+### Directory Structure
+
+The project follows a well-organized directory structure to keep the codebase clean and maintainable. Below is an overview of the main components and directories:
+
+- `src/`: This directory contains the source code and resources for the project.
+  - `main/`: The main application code.
+    - `java/`: All Java source files are located here.
+    - `resources/`: This directory holds resource files, such as configuration files.
+  - `test/`: Contains test code to ensure the reliability of the application.
+    - `java/`: Test source files are organized here.
+    - `resources/`: You can find test-related resource files in this directory.
+- `target/`: This directory stores compiled bytecode and built artifacts.
+- `.gitignore`: The Gitignore file specifies which files and directories should be excluded from version control.
+- `pom.xml`: The Project Object Model (POM) file, which is used for Maven configuration.
+- `README.md`: This README file, where you're currently reading project documentation.
+
+### Package Structure
+
+The Java code is organized into the following packages:
+
+- `com.kaiburr.task1.controller`: Contains REST controller classes responsible for handling HTTP requests and responses.
+- `com.kaiburr.task1.model`: Defines data model classes that represent entities in the application.
+- `com.kaiburr.task1.repository`: Provides data access and persistence logic using MongoDB.
+- `com.kaiburr.task1.config`: Contains configuration classes for the application, including MongoDB setup.
+
+### Resource Files
+
+Resource files and configuration files are typically located in the `src/main/resources/` directory. Key configuration files, such as `application.properties`, are found here.
+
+### Test Code
+
+Test classes and resources can be found under the `src/test/` directory. These tests ensure the correctness and reliability of the application's functionality.
+
+This structured organization simplifies code management and makes it easier for developers to work on different aspects of the project. It also encourages best practices for separation of concerns and maintainability.
+
 ## Implementation Details
 
 1. Create a Server (POST Request):
