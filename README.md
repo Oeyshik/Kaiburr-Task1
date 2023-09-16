@@ -52,7 +52,7 @@ In the 'application.properties' file, configure your MongoDB database settings:
 ## Project Structure
 ## Implementation Details
 
-#### Create a Server (POST Request):
+1. Create a Server (POST Request):
 
 To create a new server, send a POST request to the /api/servers endpoint. The request body should be in JSON format and include the following attributes:
 
@@ -70,23 +70,23 @@ Example JSON request body:
     "framework": "Spring Boot"
     }
 
-#### Get Servers (GET Request):
+2. Get Servers (GET Request):
 
 To retrieve a list of all servers, send a GET request to the /api/servers endpoint. If no parameters are provided, this endpoint will return a list of all servers stored in the database.
 
-#### Get Server by ID (GET Request):
+3. Get Server by ID (GET Request):
 
 To retrieve a specific server by its ID, send a GET request to the /api/servers/{id} endpoint, where {id} should be replaced with the server's unique ID. If the server with the specified ID exists, it will be returned; otherwise, a "404 Not Found" response will be returned.
 
-#### Update Server by ID (PUT Request):
+4. Update Server by ID (PUT Request):
 
 To update an existing server by its ID, send a PUT request to the /api/servers/{id} endpoint, where {id} should be replaced with the server's unique ID. The request body should contain the updated server information in JSON format. If the server with the specified ID exists, it will be updated with the provided data; otherwise, a "404 Not Found" response will be returned.
 
-#### Delete Server by ID (DELETE Request):
+5. Delete Server by ID (DELETE Request):
 
 To delete a server by its ID, send a DELETE request to the /api/servers/{id} endpoint, where {id} should be replaced with the server's unique ID. If the server with the specified ID exists, it will be deleted from the database; otherwise, a "404 Not Found" response will be returned.
 
-#### Find Servers by Name (GET Request)
+6. Find Servers by Name (GET Request)
 To search for servers by name, send a GET request to the /api/servers/findByName endpoint with the name query parameter. The server controller will search for servers whose names contain the provided string. If one or more servers are found, they will be returned; otherwise, a "404 Not Found" response will be returned.
 
 These endpoints collectively provide the basic CRUD (Create, Read, Update, Delete) operations for managing server objects in the MongoDB database.
