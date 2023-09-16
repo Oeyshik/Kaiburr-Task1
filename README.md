@@ -1,4 +1,4 @@
-#Kaiburr Task 1: Java REST API Example
+# Kaiburr Task 1: Java REST API Example
 
 This README provides a step-by-step guide on how to create a Java REST API with endpoints for searching, creating, updating, and deleting "server" objects. This project demonstrates the use of Spring Boot and MongoDB to build a RESTful API.
 
