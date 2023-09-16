@@ -23,9 +23,6 @@ This README provides a step-by-step guide on how to create a Java REST API with 
    - [Update Server by ID Request](#update-server-by-id-request)
    - [Delete Server by ID Request](#delete-server-by-id-request)
    - [Find Servers by Name Request](#find-servers-by-name-request)
-7. [GitHub Repository](#github-repository)
-10. [License](#license)
-
 
 ## Prerequisites
 - Java Development Kit (JDK)
